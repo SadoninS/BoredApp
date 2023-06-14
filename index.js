@@ -5,7 +5,7 @@ const textNode = document.querySelector('#text');
 const btnNode = document.querySelector('#btn');
 
 btnNode.addEventListener('click', () => {
-  fetch('http://www.boredapi.com/api/activity/')
+  fetch('https://www.boredapi.com/api/activity/')
     .then((response) => {
       return response.json();
     })
