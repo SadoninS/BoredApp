@@ -7,16 +7,16 @@ body {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
   color: #000000;
 }
 
 h1 {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
 p {
+  font-size: 2.5rem;
+  line-height: 3rem;
   font-weight: 400;
   text-align: center;
 }
@@ -40,13 +40,23 @@ p {
 }
 
 .submitBtn {
-  width: 500px;
-  height: 60px;
+  width: 300px;
+  padding: 5px;
   background: #0094ff;
-  font-size: 32px;
-  line-height: 60px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   text-align: center;
   color: #ffffff;
   border: 2px solid #0094ff;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  body {
+    gap: 100px;
+  }
+  .submitBtn {
+    width: 65vw;
+    height: 3rem;
+  }
 }
