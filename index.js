@@ -1,6 +1,6 @@
 const favicon = document.querySelector('link[rel="shortcut icon"]');
 const bodyNode = document.querySelector('body');
-const headerNode = document.querySelector('#header');
+const titleNode = document.querySelector('#title');
 const textNode = document.querySelector('#text');
 const btnNode = document.querySelector('#btn');
 
@@ -10,7 +10,7 @@ btnNode.addEventListener('click', () => {
       return response.json();
     })
     .then((data) => {
-      textNode.innerText = data.activity;
+      textNode.innerText = `${data.activity}!`;
       renderNewStyle();
     });
 });
@@ -18,5 +18,5 @@ btnNode.addEventListener('click', () => {
 function renderNewStyle() {
   favicon.setAttribute('href', 'fun.png');
   bodyNode.classList.add('fun');
-  headerNode.innerText = 'Have fun!🔥';
+  titleNode.innerText = 'Have fun!🔥';
 }
