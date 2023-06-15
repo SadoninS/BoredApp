@@ -1,4 +1,5 @@
 body {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -53,7 +54,7 @@ p {
 
 @media (max-width: 576px) {
   body {
-    gap: 100px;
+    gap: 80px;
   }
   .submitBtn {
     width: 65vw;
