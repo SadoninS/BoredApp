@@ -53,9 +53,6 @@ p {
 }
 
 @media (max-width: 576px) {
-  body {
-    gap: 80px;
-  }
   .submitBtn {
     width: 65vw;
     height: 3rem;
