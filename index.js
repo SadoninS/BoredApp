@@ -12,7 +12,8 @@ btnNode.addEventListener('click', () => {
     .then((data) => {
       textNode.innerText = `${data.activity}!`;
       renderNewStyle();
-    });
+    })
+    .catch(() => alert('Ошибка сети, проверьте ваше сетевое подключение.'));
 });
 
 function renderNewStyle() {
